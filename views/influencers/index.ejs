@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>Welcome to OpenInfluencer!</h1>
+                <p>View local influencers available to work with you!</p>
+                <p>
+                    <a class="btn btn-primary btn-lrg" href="/influencers/new">Add Influencer</a>
+                </p>
+            </div>
+        </header>
+  
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Top Influencers</h3>
+            </div>
+        </div>
+        
+        <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+            <% influencers.forEach(function(influencer){ %>
+                <div class="col-md-4 col-sm-6">
+                    
+                    <div class="thumbnail">
+                        <img src="<%= influencer.picture %>">
+                    </div>
+                    <div class="caption">
+                         <h4><%= influencer.name %></h4>
+                    </div>
+                    <p>
+                        <a href="/influencers/<%= influencer._id %>" class="btn btn-primary">More Info</a>
+                    </p>
+                </div>
+            <% }); %>
+            
+        </div>
+        
+    </div>
+<% include ../partials/footer %>

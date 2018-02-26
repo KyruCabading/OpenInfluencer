@@ -1,0 +1,65 @@
+<% include ../partials/header %>
+<div style="padding-bottom: 80px;" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Details</p>
+            <div class="list-group">
+                <li class="list-group-item active">Pricing</li>
+                <li class="list-group-item">Skills</li>
+                <li class="list-group-item">Manager</li>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="thumbnail">
+                <img class="image-responsive" src="<%= influencer.picture %>">
+            </div>
+            <div class="caption">
+                <h4 class="pull-right">
+                    $9.00/post
+                </h4>
+                <h1><%= influencer.name %></h1>
+                <p><%= influencer.description %></p>
+                <p>
+                    <em>Submitted by <%= influencer.author.username %></em>
+                </p>
+                <% if(currentUser && influencer.author.id.equals(currentUser._id)) { %>
+                <a class="btn btn-warning" href="/influencers/<%= influencer._id %>/edit">Edit</a>
+                <% } %>
+            </div>
+            <div class="well">
+                <h3>Comments</h3>
+                <% influencer.comments.forEach(function(comment){ %>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><strong><%= comment.author.username %></strong>
+                            <span class="pull-right">10 days ago</span>
+                            <p><%= comment.text %></p>
+                            <% if(currentUser && comment.author.id.equals(currentUser._id)) { %>
+                                <form action="/influencers/<%= influencer._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST" class="inline">
+                                    <a href="/influencers/<%= influencer._id %>/comments/<%= comment._id %>/edit" class="btn btn-xs btn-warning">Edit</a>
+                                    <input type="submit" class="btn btn-xs btn-danger" value="Delete">
+                                </form>
+                            <% } %>
+                        </div>
+                    </div>
+                <% }) %>
+                
+                <h3>Post a Comment</h3>
+                <% if (!currentUser) { %>
+                <p>You must login to comment</p>
+                <button><a href="/login">Login</a></button>
+                <% } else { %>
+                <form action="/influencers/<%= influencer._id %>/comments" method="POST">
+                    <textarea class="form-control" rows="2" name="comment[text]"></textarea>
+                    <div class="form-group">
+                         <input style="margin: 5px;" class="btn btn-lrg btn-primary" type="submit">
+                    </div>    
+                </form>
+                <% } %>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<% include ../partials/footer %>

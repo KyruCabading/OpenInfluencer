@@ -1,0 +1,30 @@
+<% include ../partials/header %>
+    <div class="container">
+        <div class="row">
+        
+            <h1 style="text-align: center;">Edit <%= influencer.name %></h1>
+            <div style="width: 30%; margin: 25px auto;">
+                
+                <form action="/influencers/<%= influencer._id %>?_method=PUT" method="POST">
+                    <div class="form-group">
+                        <input class="form-control" type="text" value="<%= influencer.name %>" name="influencer[name]" >
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control"type="text"  value="<%= influencer.picture %>" name="influencer[picture]">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control"type="text" value="<%= influencer.description %>" name="influencer[description]">
+                    </div>
+                    <div class="form-group">
+                         <input class="btn btn-lrg btn-primary btn-block" type="submit">
+                    </div>
+                    <button type="submit" class="btn btn-danger" formaction="/influencers/<%= influencer._id %>?_method=DELETE" method="POST">Delete Post</button>
+
+                </form>
+                <a href="/influencers">Back</a>
+
+            </div>
+            
+        </div>
+    </div>
+<% include ../partials/footer %>
