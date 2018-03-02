@@ -12,12 +12,12 @@ var express     = require("express"),
     faker = require("faker"),
     methodOverride = require("method-override"),
     flash = require("connect-flash");
-    
+
 var commentRoutes = require("./routes/comments"),
     influencerRoutes = require("./routes/influencers"),
     indexRoutes = require ("./routes/index");
 
-    
+
 // Local connection
 // mongoose.connect("mongodb://localhost/open_influencer");
 
@@ -55,10 +55,15 @@ app.use(indexRoutes);
 app.use("/influencers/:id/comments", commentRoutes);
 app.use("/influencers", influencerRoutes);
 
-// LISTEN SERVER
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("server init");
+// // Deploy Online
+// app.listen(process.env.PORT, process.env.IP, function(){
+//     console.log("server init");
+// });
+
+// DEPLOY Locally
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+
+app.listen(server_port, server_ip_address, function(){
+  console.log("Server initialized at " + server_ip_address + ". view site at http://localhost:" + server_port);
 });
-
-
-
