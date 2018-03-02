@@ -4,7 +4,7 @@ Learning project: HTML5 website built on a MongoDB using ExpressJS complete with
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See running locally for notes on how to deploy the server locally on your machine.
 
 ### Prerequisites
 
@@ -14,10 +14,6 @@ These instructions will get you a copy of the project up and running on your loc
 1. A fork of the repo (for any contributions)
 1. A clone of the [OpenInfluencer repo](https://github.com/KyruCabading/OpenInfluencer) on your local machine
 
-```
-Give examples
-```
-
 ### Installation
 
 1. `cd OpenInfluencer` to go into the project root
@@ -25,18 +21,20 @@ Give examples
 
 ### Running locally
 
-1. `yarn dev` to start the hot-reloading development server (powered by [Gatsby](https://www.gatsbyjs.org))
-1. `open http://localhost:8000` to open the site in your favorite browser
+1. `cd OpenInfluencer` to go into the project root
+1. `node app.js` to start the node server.
+1. open http://localhost:8080 to open the site in your favorite browser
 
-### Built With
+## Built With
 
-* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [MongoDB](https://maven.apache.org/) - Database
-* [PassportJS](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [mongoDB](https://www.mongodb.com/) - database
+* [express](https://expressjs.com/) - web application framework
+* [node](https://nodejs.org/en/) - server framework
+* [Bootstrap](https://getbootstrap.com/) - css framework
+* [Passport.js](http://www.passportjs.org/) - authentication framework
+* [body-parser](https://www.npmjs.com/package/body-parser) - body parsing middleware
 
 ## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 #### Create a branch
 
@@ -46,9 +44,9 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Kyru Cabading** - *Initial work* - [KyruCabading](https://github.com/KyruCabading)
+* **Kyru Cabading** [KyruCabading](https://github.com/KyruCabading)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the [baby contributor](https://web.facebook.com/JanaVacaro) who participated in this project.
 
 ## License
 
