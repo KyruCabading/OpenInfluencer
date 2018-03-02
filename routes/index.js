@@ -2,9 +2,9 @@ var express = require("express"),
     router = express.Router(),
     passport = require("passport"),
     User = require("../models/user");
-    
-    
-    
+
+
+
 // ROUTES
 
 router.get("/", function(req, res){
@@ -27,7 +27,7 @@ router.post("/register", function(req, res){
             passport.authenticate("local")(req, res, function(){
                 req.flash("success", "Welcome to OpenInfluencer " + req.body.username);
                 res.redirect("/influencers");
-            });            
+            });
         }
     });
 });
@@ -49,12 +49,12 @@ router.post("/login", passport.authenticate("local",
             console.log(data);
         }
     });
-    
-    
+
+
 // Logout
 router.get("/logout", function(req, res){
     req.logout();
-    
+
     req.flash("success", "You are now logged out");
     res.redirect("/influencers");
 });
