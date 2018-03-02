@@ -29,14 +29,14 @@ Give examples
 1. `node app.js` to start the node server.
 1. open http://localhost:8080 to open the site in your favorite browser
 
-### Built With
+## Built With
 
-* [mongoDB](https://www.mongodb.com/) - Database
+* [mongoDB](https://www.mongodb.com/) - database
 * [express](https://expressjs.com/) - web application framework
-* [node](https://nodejs.org/en/) - The server framework
-* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - The CSS framework used
-
-* [PassportJS](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [node](https://nodejs.org/en/) - server framework
+* [Bootstrap](https://getbootstrap.com/) - css framework
+* [Passport.js](http://www.passportjs.org/) - authentication framework
+* [body-parser](https://www.npmjs.com/package/body-parser) - body parsing middleware
 
 ## Contributing
 
