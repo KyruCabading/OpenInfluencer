@@ -46,6 +46,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 * **Kyru Cabading** [KyruCabading](https://github.com/KyruCabading)
 
+See also the [baby contributor](https://web.facebook.com/JanaVacaro)who participated in this project.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
