@@ -46,7 +46,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 * **Kyru Cabading** [KyruCabading](https://github.com/KyruCabading)
 
-See also the [baby contributor](https://web.facebook.com/JanaVacaro)who participated in this project.
+See also the [baby contributor](https://web.facebook.com/JanaVacaro) who participated in this project.
 
 ## License
 
