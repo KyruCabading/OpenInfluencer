@@ -25,18 +25,20 @@ Give examples
 
 ### Running locally
 
-1. `yarn dev` to start the hot-reloading development server (powered by [Gatsby](https://www.gatsbyjs.org))
-1. `open http://localhost:8000` to open the site in your favorite browser
+1. `cd OpenInfluencer` to go into the project root
+1. `node app.js` to start the node server.
+1. open http://localhost:8080 to open the site in your favorite browser
 
 ### Built With
 
-* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [MongoDB](https://maven.apache.org/) - Database
+* [mongoDB](https://www.mongodb.com/) - Database
+* [express](https://expressjs.com/) - web application framework
+* [node](https://nodejs.org/en/) - The server framework
+* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - The CSS framework used
+
 * [PassportJS](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 #### Create a branch
 
@@ -46,9 +48,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Kyru Cabading** - *Initial work* - [KyruCabading](https://github.com/KyruCabading)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Kyru Cabading** [KyruCabading](https://github.com/KyruCabading)
 
 ## License
 
