@@ -18,74 +18,38 @@ These instructions will get you a copy of the project up and running on your loc
 Give examples
 ```
 
-### Installing
+### Installation
 
-A step by step series of examples that tell you have to get a development env running
+1. `cd OpenInfluencer` to go into the project root
+1. `yarn` to install the websites npm dependencies
 
-Say what the step will be
+### Running locally
 
-```
-Give the example
-```
+1. `yarn dev` to start the hot-reloading development server (powered by [Gatsby](https://www.gatsbyjs.org))
+1. `open http://localhost:8000` to open the site in your favorite browser
 
-And repeat
+### Built With
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [MongoDB](https://maven.apache.org/) - Database
+* [PassportJS](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
+#### Create a branch
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+1. `git checkout master` from any folder in your local `OpenInfluencer` repository
+1. `git pull origin master` to ensure you have the latest main code
+1. `git checkout -b the-name-of-my-branch` (replacing `the-name-of-my-branch` with a suitable name) to create a branch
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Kyru Cabading** - *Initial work* - [KyruCabading](https://github.com/KyruCabading)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
