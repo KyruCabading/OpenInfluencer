@@ -14,10 +14,6 @@ These instructions will get you a copy of the project up and running on your loc
 1. A fork of the repo (for any contributions)
 1. A clone of the [OpenInfluencer repo](https://github.com/KyruCabading/OpenInfluencer) on your local machine
 
-```
-Give examples
-```
-
 ### Installation
 
 1. `cd OpenInfluencer` to go into the project root
