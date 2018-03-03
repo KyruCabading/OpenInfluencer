@@ -55,15 +55,19 @@ app.use(indexRoutes);
 app.use("/influencers/:id/comments", commentRoutes);
 app.use("/influencers", influencerRoutes);
 
-// // Deploy Online
-// app.listen(process.env.PORT, process.env.IP, function(){
-//     console.log("server init");
-// });
+// Deploy Online
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log(
+      "Server initialized at " +
+      process.env.IP +
+      ". view site at " +
+      process.env.PORT);
+});
 
 // DEPLOY Locally
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+// var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+// var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
-app.listen(server_port, server_ip_address, function(){
-  console.log("Server initialized at " + server_ip_address + ". view site at http://localhost:" + server_port);
-});
+// app.listen(server_port, server_ip_address, function(){
+//   console.log("Server initialized at " + server_ip_address + ". view site at http://localhost:" + server_port);
+// });
