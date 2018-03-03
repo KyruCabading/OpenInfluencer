@@ -18,11 +18,8 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes = require ("./routes/index");
 
 
-// Local connection
+// Local Database Connection
 mongoose.connect(process.env.DATABASEURL);
-
-// mLab connection
-// mongoose.connect("mongodb://kyrusri:iali2Openinf909@ds249718.mlab.com:49718/openinfluencer");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -56,18 +53,10 @@ app.use("/influencers/:id/comments", commentRoutes);
 app.use("/influencers", influencerRoutes);
 
 // Deploy Online
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(process.env.PORT || 8080, process.env.IP || '127.0.0.1', function(){
     console.log(
       "Server initialized at " +
       process.env.IP +
       ". view site at " +
       process.env.PORT);
 });
-
-// DEPLOY Locally
-// var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-// var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-
-// app.listen(server_port, server_ip_address, function(){
-//   console.log("Server initialized at " + server_ip_address + ". view site at http://localhost:" + server_port);
-// });
