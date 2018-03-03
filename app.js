@@ -19,10 +19,10 @@ var commentRoutes = require("./routes/comments"),
 
 
 // Local connection
-// mongoose.connect("mongodb://localhost/open_influencer");
+mongoose.connect(process.env.DATABASEURL);
 
 // mLab connection
-mongoose.connect("mongodb://kyrusri:iali2Openinf909@ds249718.mlab.com:49718/openinfluencer");
+// mongoose.connect("mongodb://kyrusri:iali2Openinf909@ds249718.mlab.com:49718/openinfluencer");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
