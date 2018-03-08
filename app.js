@@ -60,3 +60,4 @@ app.listen(process.env.PORT, process.env.IP, function(){
       ". view site at " +
       process.env.PORT);
 });
+console.log(app.get('env'));
