@@ -19,7 +19,7 @@ var commentRoutes = require("./routes/comments"),
 
 
 // Local Database Connection
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect(process.env.DATABASEURL || "mongodb://localhost/open_influencer");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -53,7 +53,7 @@ app.use("/influencers/:id/comments", commentRoutes);
 app.use("/influencers", influencerRoutes);
 
 // Deploy Online
-app.listen(process.env.PORT || 8080, process.env.IP || '127.0.0.1', function(){
+app.listen(process.env.PORT, process.env.IP, function(){
     console.log(
       "Server initialized at " +
       process.env.IP +
