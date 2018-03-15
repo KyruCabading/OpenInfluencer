@@ -33,7 +33,7 @@ app.use(flash());
 app.use(require("cookie-session")({
     secret: "ilovebaby",
     resave: false,
-    cookie: { maxAge: 60 * 60 * 1000 },
+    maxAge: 24 * 60 * 60 * 1000,
     saveUninitialized: false
 }));
 
