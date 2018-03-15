@@ -20,11 +20,13 @@ These instructions will get you a copy of the project up and running on your loc
 1. `cd OpenInfluencer` to go into the project root
 1. `yarn` to install the websites npm dependencies
 1. `nano .bash_profile` to create a local .bash_profile
-1. ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+1. Add PORT & IP values in your .bash_profile
 ```
+IP = "127.0.0.1"
+PORT = 8080
+```
+1. `control + x`, `y`, `enter` to save your profile
+1. `source .bash_profile` to load your settings
 
 ### Running locally
 
