@@ -10,6 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Git
 1. Node
+1. MongoDB
 1. Yarn: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
 1. A fork of the repo (for any contributions)
 1. A clone of the [OpenInfluencer repo](https://github.com/KyruCabading/OpenInfluencer) on your local machine
