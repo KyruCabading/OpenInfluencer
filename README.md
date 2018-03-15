@@ -19,6 +19,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. `cd OpenInfluencer` to go into the project root
 1. `yarn` to install the websites npm dependencies
+1. `nano .bash_profile` to create a local .bash_profile
+1. ```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
 
 ### Running locally
 
