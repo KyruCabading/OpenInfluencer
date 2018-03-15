@@ -30,7 +30,7 @@ app.use(flash());
 // seedDB(); //seed the database
 
 // PASSPORT CONFIGURATION
-app.use(require("express-session")({
+app.use(require("cookie-session")({
     secret: "ilovebaby",
     resave: false,
     saveUninitialized: false
