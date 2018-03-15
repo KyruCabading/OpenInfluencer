@@ -8,8 +8,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-1. Git
-1. Node
+1. [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. [Node](https://nodejs.org/en/)
+1. MongoDB: See [MongoDB Installation Documentation](https://docs.mongodb.com/manual/installation/)
 1. Yarn: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
 1. A fork of the repo (for any contributions)
 1. A clone of the [OpenInfluencer repo](https://github.com/KyruCabading/OpenInfluencer) on your local machine
@@ -18,6 +19,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. `cd OpenInfluencer` to go into the project root
 1. `yarn` to install the websites npm dependencies
+1. `nano .bash_profile` to create a local .bash_profile
+1. Add PORT & IP values in your .bash_profile
+```
+IP = "127.0.0.1"
+PORT = 8080
+```
+1. `control + x`, `y`, `enter` to save your profile
+1. `source .bash_profile` to load your settings
 
 ### Running locally
 
