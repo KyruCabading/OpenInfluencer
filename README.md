@@ -4,6 +4,12 @@ Learning project: HTML5 website built on a MongoDB using ExpressJS complete with
 
 This is a basic site which is a repository for Online Influencers to connect with companies for Social Media Marketing, Branding, and other projects. Features are incomplete as this is just a jumping off point to learning web development. 
 
+Features to develop in order of importance
+* Statistics of likes/followers, % of active audience & engagement ranking.
+* Stripe Payment Integration
+* Chat Messaging
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See running locally for notes on how to deploy the server locally on your machine.
