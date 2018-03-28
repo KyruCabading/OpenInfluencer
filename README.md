@@ -1,5 +1,5 @@
 # OpenInfluencer
-
+![OpenInfluencer homepage](display.png)
 Learning project: HTML5 website built on a MongoDB using ExpressJS complete with RESTful API routing with Authentication features using PassportJS. 
 
 ## Getting Started
@@ -46,7 +46,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Authors
 
-* **Kyru Cabading** [KyruCabading](https://github.com/KyruCabading)
+* **[KyruCabading](https://github.com/KyruCabading)**
 
 See also the [baby contributor](https://web.facebook.com/JanaVacaro) who participated in this project.
 
