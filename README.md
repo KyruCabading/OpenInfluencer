@@ -2,6 +2,8 @@
 ![OpenInfluencer homepage](display.png)
 Learning project: HTML5 website built on a MongoDB using ExpressJS complete with RESTful API routing with Authentication features using PassportJS. 
 
+## About the Project
+
 This is a basic site which is a repository for Online Influencers to connect with companies for Social Media Marketing, Branding, and other projects. Features are incomplete as this is just a jumping off point to learning web development. 
 
 Features to develop in order of importance
